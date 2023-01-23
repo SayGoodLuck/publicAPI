@@ -1,12 +1,20 @@
 package com.example.springboot.student.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.Period;
 
 @Entity
 @Table
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
 public class Student {
     @Id
     @SequenceGenerator(
@@ -25,21 +33,10 @@ public class Student {
     private LocalDate dob;
     private String email;
 
-    public Student(Long id, String name, LocalDate dob, String email) {
-        this.id = id;
-        this.name = name;
-        this.dob = dob;
-        this.email = email;
-    }
-
     public Student(String name,  LocalDate dob, String email) {
         this.name = name;
         this.dob = dob;
         this.email = email;
-    }
-
-    public Student() {
-
     }
 
     public Long getId() {
@@ -82,15 +79,5 @@ public class Student {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", dob=" + dob +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }
 

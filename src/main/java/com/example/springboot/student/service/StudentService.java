@@ -3,7 +3,8 @@ package com.example.springboot.student.service;
 import com.example.springboot.student.entity.Student;
 import com.example.springboot.student.repository.StudentRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,16 +12,14 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
+@AllArgsConstructor
+@Slf4j
 public class StudentService {
 
     private final StudentRepository studentRepository;
 
-    @Autowired
-    public StudentService(StudentRepository studentRepository) {
-        this.studentRepository = studentRepository;
-    }
-
     public List<Student> getStudents() {
+        log.info("getStudents was called");
        return studentRepository.findAll();
     }
 
