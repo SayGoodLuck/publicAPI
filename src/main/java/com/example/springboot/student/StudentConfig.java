@@ -1,5 +1,6 @@
 package com.example.springboot.student;
 
+import com.example.springboot.student.entity.Student;
 import com.example.springboot.student.repository.StudentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

@@ -1,8 +1,7 @@
 package com.example.springboot.student.controller;
 
-import com.example.springboot.student.Student;
+import com.example.springboot.student.entity.Student;
 import com.example.springboot.student.service.StudentService;
-import jakarta.persistence.PostUpdate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
