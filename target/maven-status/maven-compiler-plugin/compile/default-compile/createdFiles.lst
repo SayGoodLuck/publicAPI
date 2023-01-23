@@ -1,2 +1,7 @@
+com\example\springboot\student\service\StudentService.class
 com\example\springboot\Application.class
+com\example\springboot\student\controller\StudentController.class
+com\example\springboot\student\StudentConfig.class
+com\example\springboot\student\repository\StudentRepository.class
+com\example\springboot\student\Student.class
 com\example\springboot\HelloController.class

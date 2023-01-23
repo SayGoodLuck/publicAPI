@@ -1,2 +1,7 @@
 D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\HelloController.java
 D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\Application.java
+D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\student\service\StudentService.java
+D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\student\controller\StudentController.java
+D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\student\Student.java
+D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\student\StudentConfig.java
+D:\CodeWorkspace\java\gs-spring-boot\complete\src\main\java\com\example\springboot\student\repository\StudentRepository.java
